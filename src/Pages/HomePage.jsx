@@ -30,8 +30,8 @@ function HomePage() {
   }
 
   return (
-    <div>
-      <section className="relative h-[500px] w-full overflow-hidden">
+    <div className=' h-[100vh] '>
+      <section className="relative h-[150px] lg:h-[500px] ">
         <div className="relative h-full w-full">
           {banners.map((banner, index) => (
             <div
@@ -43,7 +43,7 @@ function HomePage() {
               <img
                 src={banner.image}
                 alt={banner.alt}
-                className="h-full w-full object-cover"
+                className="lg:h-full lg:w-full  lg:object-cover"
               />
             </div>
           ))}
