@@ -11,7 +11,7 @@ function SearchPage({searchKey,setType}) {
           e.preventDefault();
          setType(e.target.value)
         
-        }} className='bg-gray-800 text-white  p-3 rounded-lg hover:bg-white hover:text-gray-800'>
+        }} className='bg-gray-800 text-white max-w-fit p-3 rounded-lg hover:bg-white hover:text-gray-800'>
           <option value="movie">Movie</option>
           <option value="series">Series</option>
           <option value="episode">Episode</option>

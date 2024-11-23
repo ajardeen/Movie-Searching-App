@@ -19,7 +19,7 @@ function NavBar({ getSearchKey ,fetchMovies}) {
   }, []);
   return (
     <nav className={`${isScrolled ? 'backdrop-blur-md' : null} transition-colors duration-300 text-white p-2 md:p-4 fixed w-full top-0 z-50 lg:container rounded-lg`}>
-  <div className="container mx-auto flex items-center justify-between px-2 md:px-4">
+  <div className="md:container mx-auto flex items-center justify-between px-2 md:px-4">
     <div className="flex items-center space-x-4 md:space-x-8">
       <Link to={"/"}>
         <h1 className="text-xl md:text-2xl font-bold text-[#00a8e1]">MovieApp</h1>
@@ -34,7 +34,7 @@ function NavBar({ getSearchKey ,fetchMovies}) {
     <div className="flex items-center space-x-2 md:space-x-6">
       <div className="relative">
         <input
-          className="bg-[#121212] text-white px-2 md:px-4 py-2 rounded-full w-32 sm:w-48 md:w-64 focus:w-40 sm:focus:w-56 md:focus:w-72 focus:outline-none focus:ring-2 focus:ring-[#00a8e1] transition-all duration-200 ease-linear text-sm md:text-base"
+          className="bg-[#121212] placeholder:opacity-0 md:placeholder:opacity-100 text-white px-2 md:px-4 py-2 rounded-full w-32 sm:w-48 md:w-64 focus:w-40 sm:focus:w-56 md:focus:w-72 focus:outline-none focus:ring-2 focus:ring-[#00a8e1] transition-all duration-200 ease-linear text-sm md:text-base"
           type="text"
           placeholder="Search movies, TV shows..."
           onChange={(e) => getSearchKey(e.target.value)}
